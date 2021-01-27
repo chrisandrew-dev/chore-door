@@ -1,0 +1,61 @@
+:root {
+  --clr-bg: #010165;
+  --clr-text: white;
+  --clr-accent: #8439F6;
+  --clr-secondary: #00FFFF;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: var(--clr-bg);
+  margin: 0;
+  color: var(--clr-text);
+}
+
+header {
+  background: radial-gradient(var(--clr-secondary), var(--clr-accent));
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+}
+
+header h1 {
+  position: absolute;
+  top: -200px;
+}
+
+header img {
+  height: 50px;
+}
+
+main {
+  height: calc(100vh - 70px);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.flexbox {
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  width: 65%;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */
