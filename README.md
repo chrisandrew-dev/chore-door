@@ -21,4 +21,3 @@ Silly guessing game using Javascript fundamentals. This project was completed as
 
 ## Attributions
 * [Codecademy.com](https://www.codecademy.com)
-* [Handlebars.js](https://handlebarsjs.com/)
