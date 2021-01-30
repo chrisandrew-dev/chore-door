@@ -18,30 +18,33 @@
     <img src="images/logo.svg" alt="Chore Door!" aria-label="Chore Door" />
   </header>
   <main>
-    <div class="flex-row">
-      <img src="images/star.svg" alt="" aria-hidden="true">
-      <h2>Objective</h2>
-      <img src="images/star.svg" alt="" aria-hidden="true">
+    <div>
+      <div class="flex" id="instructions-heading">
+        <img src="images/star.svg" alt="" aria-hidden="true">
+        <h2>Instructions</h2>
+        <img src="images/star.svg" alt="" aria-hidden="true">
+      </div>
+      <table>
+        <tr>
+          <td class="column-1">1.</td>
+          <td class="column-2">Hiding behind one of the doors is ChoreBot, who's out to remind you to do your chores.
+          </td>
+        </tr>
+        <tr>
+          <td class="column-1">2.</td>
+          <td class="column-2">Your mission is to open all 3 of the doors before running into ChoreBot.</td>
+        </tr>
+        <tr>
+          <td class="column-1">3.</td>
+          <td class="column-2">If you manage to avoid Chorebot until you open the very last door, you win!</td>
+        </tr>
+        <tr>
+          <td class="column-1">4.</td>
+          <td class="column-2">See if you can score a winning streak!</td>
+        </tr>
+      </table>
     </div>
-    <table>
-      <tr>
-        <td class="column-1">1.</td>
-        <td class="column-2">Hiding behind one of the doors is ChoreBot.</td>
-      </tr>
-      <tr>
-        <td class="column-1">2.</td>
-        <td class="column-2">Your mission is to open all 3 of the doors before running into ChoreBot.</td>
-      </tr>
-      <tr>
-        <td class="column-1">3.</td>
-        <td class="column-2">If you mange to avoid Chorebot until you open the very last door, you win!</td>
-      </tr>
-      <tr>
-        <td class="column-1">4.</td>
-        <td class="column-2">See if you can score a winning streak!</td>
-      </tr>
-    </table>
-    <div id="doors-container">
+    <div class="flex" id="doors-container">
       <img src="./images/closed_door.svg" alt="Closed door" id="door-1">
       <img src="./images/closed_door.svg" alt="Closed door" id="door-2">
       <img src="./images/closed_door.svg" alt="Closed door" id="door-3">
