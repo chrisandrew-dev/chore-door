@@ -19,10 +19,23 @@ html {
 
 body {
   margin: 0;
+  text-align: center;
   background: var(--clr-bg);
   color: var(--clr-text);
   font-family: -apple-system,  BlinkMacSystemFont,  "Segoe UI",  Roboto,  Helvetica,  Arial,  sans-serif;
-  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  top: -200px;
+  visibility: hidden;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0 var(--spacer);
+  color: var(--clr-secondary);
 }
 
 header {
@@ -30,18 +43,31 @@ header {
   padding: var(--spacer);
 }
 
-header h1 {
-  position: absolute;
-  top: -200px;
-}
-
 header img {
   height: 50px;
 }
 
-main table {
+main {
+  padding-block: calc(var(--spacer) * 6);
+}
+
+main > * {
   margin-inline: auto;
-  text-align: left;
+  margin-bottom: calc(var(--spacer) * 6);
+  max-width: 450px;
+}
+
+table {
+  text-align: justify;
+  width: 90%;
+  margin-inline: auto;
+}
+
+table .column-1 {
+  vertical-align: text-top;
+  color: var(--clr-secondary);
+  font-weight: 500;
+  padding-right: var(--spacer);
 }
 
 button {
@@ -56,6 +82,29 @@ button {
   -webkit-animation: pulse 0.8s 30 alternate;
           animation: pulse 0.8s 30 alternate;
   color: var(--clr-bg);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#instructions-heading {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: var(--spacer);
+}
+
+#doors-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#doors-container img {
+  max-width: 33%;
 }
 
 @-webkit-keyframes pulse {
