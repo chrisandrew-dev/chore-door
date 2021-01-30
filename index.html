@@ -18,8 +18,8 @@
     <img src="images/logo.svg" alt="Chore Door!" aria-label="Chore Door" />
   </header>
   <main>
-    <div>
-      <div class="flex" id="instructions-heading">
+    <div id="instructions-container">
+      <div class="flex heading">
         <img src="images/star.svg" alt="" aria-hidden="true">
         <h2>Instructions</h2>
         <img src="images/star.svg" alt="" aria-hidden="true">
@@ -27,16 +27,16 @@
       <table>
         <tr>
           <td class="column-1">1.</td>
-          <td class="column-2">Hiding behind one of the doors is ChoreBot, who's out to remind you to do your chores.
+          <td class="column-2">Hiding behind one of the doors is <em><em>Chorebot</em></em>, who's out to remind you to do your chores.
           </td>
         </tr>
         <tr>
           <td class="column-1">2.</td>
-          <td class="column-2">Your mission is to open all 3 of the doors before running into ChoreBot.</td>
+          <td class="column-2">Your mission is to <strong>open all 3 of the doors</strong> before running into <em>Chorebot</em>.</td>
         </tr>
         <tr>
           <td class="column-1">3.</td>
-          <td class="column-2">If you manage to avoid Chorebot until you open the very last door, you win!</td>
+          <td class="column-2">If you manage to avoid <em>Chorebot</em> until you open the very last door, you get to put your feet up - the chores can wait!</td>
         </tr>
         <tr>
           <td class="column-1">4.</td>
@@ -49,7 +49,10 @@
       <img src="./images/closed_door.svg" alt="Closed door" id="door-2">
       <img src="./images/closed_door.svg" alt="Closed door" id="door-3">
     </div>
-    <button id="start-button">Start</button>
+    <div>
+      <button id="start-button">Start</button>
+      <p>Current streak: <span>0</span></p>
+    </div>
   </main>
 </body>
 
