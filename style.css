@@ -3,6 +3,7 @@
   --clr-text: white;
   --clr-accent: #8439F6;
   --clr-secondary: #00FFFF;
+  --spacer: 0.5em;
 }
 
 html {
@@ -13,19 +14,20 @@ html {
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  letter-spacing: 0.08em;
 }
 
 body {
-  background: var(--clr-bg);
   margin: 0;
+  background: var(--clr-bg);
   color: var(--clr-text);
+  font-family: -apple-system,  BlinkMacSystemFont,  "Segoe UI",  Roboto,  Helvetica,  Arial,  sans-serif;
+  text-align: center;
 }
 
 header {
-  background: radial-gradient(var(--clr-secondary), var(--clr-accent));
-  width: 100%;
-  text-align: center;
-  padding: 0.5em;
+  background: var(--clr-secondary);
+  padding: var(--spacer);
 }
 
 header h1 {
@@ -37,25 +39,34 @@ header img {
   height: 50px;
 }
 
-main {
-  height: calc(100vh - 70px);
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  width: 100%;
+main table {
+  margin-inline: auto;
+  text-align: left;
 }
 
-.flexbox {
-  min-width: -webkit-min-content;
-  min-width: -moz-min-content;
-  min-width: min-content;
-  width: 65%;
-  max-width: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+button {
+  padding: var(--spacer) calc(var(--spacer) * 2.5) calc(var(--spacer) + 2px);
+  border: none;
+  border-radius: 3em;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--clr-secondary);
+  -webkit-animation: pulse 0.8s 30 alternate;
+          animation: pulse 0.8s 30 alternate;
+  color: var(--clr-bg);
+}
+
+@-webkit-keyframes pulse {
+  to {
+    color: whitesmoke;
+  }
+}
+
+@keyframes pulse {
+  to {
+    color: whitesmoke;
+  }
 }
 /*# sourceMappingURL=style.css.map */
